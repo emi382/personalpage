@@ -4,18 +4,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--linking the css style sheet-->
     <title>Welcome to my page!</title>
   </head>
 
   <body>
-    <h1>Welcome to Emi's website!</h1>
-    <div>
+    <h1 class="welcome">Welcome to Emi's website!</h1>
+    <div class="intro preamble">
       <h1>Introduction:</h1>
       <!--noopener prevents the linked page from changing this one, noreferrer is to prevent the linked page from knowing where the link was. noreferrer includes noopener-->
       <p>This is a <em>work in progress</em> for the <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">Odin Project</a> curriculum</p>
       <p>When it's done, it <strong>should</strong> be a personal page to introduce myself and include some interactive elements</p>
     </div>
-    <div>
+    <!--divs can have an id as well, an id is unique unlike a class. however, class is preferred usually. ids need a different css selector-->
+    <div class="intro to-do_list">
       <h1>To do list:</h1>
       <ul>
         <li>Learn advanced HTML</li>
@@ -30,7 +32,7 @@
         <li>Create comment section for blog</li>
       </ol>
     </div>
-    <img src="./images/testimage.jpg" alt="just including an image for future reference" height="200" width="200">
+    <img src="./images/testimage.jpg" alt="just including an image for future reference" height="200" width="200" class="face">
   </body>
 
 </html>
