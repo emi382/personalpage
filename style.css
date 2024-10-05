@@ -14,9 +14,15 @@ body{
     margin-right:30%;
 }
 
+/*element that has both the class intro and the class preamble*/
 .intro.preamble {
     font-size:120%;
   }
+
+/*element that is a child of the class intro and has the class emphasis*/
+.intro .emphasis {
+    color:blue;
+}
 
 .intro{
     background-color: rgb(174, 238, 174);
