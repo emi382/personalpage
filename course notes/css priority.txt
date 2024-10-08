@@ -7,12 +7,15 @@ Example: #selector .selector beats .selector1 .selector2 .selector3 .selector4 .
          .selector p beats div p 
 
 Inheritance:
-    In css there's usually inheritance of attributes related to text. However, addressing the child element directly overrides inheritance, no matter how much of a difference
+    In css there's usually inheritance of attributes related to text. However, addressing the descendant element directly overrides inheritance, no matter how much of a difference
     in priority.
 
-    Example: Given an element with id=test and a child element nested inside, with class=test2, if both #test and .test2 specify a color, it will use the one provided by .test2
+    Example: Given an element with id=test and a descendant element nested inside, with class=test2, if both #test and .test2 specify a color, it will use the one provided by .test2
              If p{color:blue;}, and there is no class or id directly addressing the p elements, they will be colored blue even if their parent element was given a different color
              If the body element is given an id and #bodyid{color:blue;}, p{color:red;}, despite having a lower priority all the p elements will be red 
+
+NOTE: CHILD AND DESCENDANT AREN'T THE SAME THING IN CSS. The child selector selects the direct children of the specified element while descendant refers to all descendants not just
+the direct ones. Example: <div><p><p></p></p></div>, div p will select both of the ps, div > p will select only the first one.
 
 In a case where theres two rules that both have the same priority and both address the same element, the last one wins. Say <div class="example example2">, and
 .example{color:blue;}, .example2{color:red;}, in this case the color will be red because example2 was last.
