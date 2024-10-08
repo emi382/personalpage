@@ -9,7 +9,9 @@ body{
     background-size:cover;
 }
 
-.welcome,.intro,.to-do_list{
+.welcome,
+.intro,
+.to-do_list{
     margin-left:20%;
     margin-right:30%;
 }
@@ -45,6 +47,7 @@ body{
     margin-left:40%;
 }
 
+/* commas can be used to apply the same rule to different selectors */
 /* to select an id, # would be used instead of .
 entire types of html elements can also be selected, like div or p 
 */
