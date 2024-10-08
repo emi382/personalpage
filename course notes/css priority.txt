@@ -1,0 +1,16 @@
+ID > Class > Type > Less specific selector (example *)
+
+The more selectors of the same priority listed, the more priority. But only the amount of selectors matters, not the combinators or special symbols (* for example).
+
+If there are selectors of different priority listed, then that gives it more priority than a rule with purely lower priority selectors, no matter how many selectors.
+Example: #selector .selector beats .selector1 .selector2 .selector3 .selector4 ...
+         .selector p beats div p 
+
+Inheritance:
+    In css there's usually inheritance of attributes related to text. However, addressing the child element directly overrides inheritance, no matter how much of a difference
+    in priority.
+
+    Example: Given an element with id=test and a child element nested inside, with class=test2, if both #test and .test2 specify a color, it will use the one provided by .test2
+             If p{color:blue;}, and there is no class or id directly addressing the p elements, they will be colored blue even if their parent element was given a different color
+             If the body element is given an id and #bodyid{color:blue;}, p{color:red;}, despite having a lower priority all the p elements will be red 
+
