@@ -19,3 +19,5 @@ the direct ones. Example: <div><p><p></p></p></div>, div p will select both of t
 
 In a case where theres two rules that both have the same priority and both address the same element, the last one wins. Say <div class="example example2">, and
 .example{color:blue;}, .example2{color:red;}, in this case the color will be red because example2 was last.
+
+Inline CSS > Internal CSS > External CSS in terms of priority. 
