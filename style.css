@@ -9,12 +9,15 @@ body{
     background-size:cover;
 }
 
+/*margin 0 auto makes it center the element horizontally, 0 is the top and bottom. Only works if the element has a specified width*/
 .welcome,
 .intro,
 .to-do_list{
-    padding:1%;
-    margin-left:20%;
-    margin-right:30%;
+    box-sizing:border-box;
+    width:40%;
+    padding-top:1%;
+    padding-bottom:1%;
+    margin:0 auto;
 }
 
 /*element that is a descendant of the class intro and has the class emphasis*/
@@ -27,6 +30,8 @@ body{
     border-style:solid;
     background-color: rgb(174, 238, 174);
     color:rgb(83, 5, 5);
+    padding-left:4%;
+    padding-right:1%;
 }
 
 /*element that has both the class intro and the class preamble*/
@@ -60,13 +65,13 @@ default behavior for box-sizing is content-box*/
     box-sizing:border-box;
     height:10%;
     padding:1%;
-    margin-right:50%;
-    margin-bottom:1%;
-    margin-top:5%;
+    margin:2% 50% 1% 0%;
 }
 
 /*border image is needed because there's no other way to make it have a gradient color. border-image-slice is needed to specify that its only one image*/
 .welcome{
+    text-align:center;
+    margin-bottom:1%;
     background-image:url(images/welcomebackground.png);
     background-size:40%;
     border-image:linear-gradient(to bottom, rgb(94, 250, 94), rgb(24, 63, 24));
