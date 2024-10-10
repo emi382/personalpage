@@ -17,20 +17,27 @@ body{
     margin-right:30%;
 }
 
-/*element that has both the class intro and the class preamble*/
-.intro.preamble {
-    font-size:110%;
-  }
-
 /*element that is a descendant of the class intro and has the class emphasis*/
 .intro .emphasis {
     color:blue;
 }
 
-.intro,
-.info{
+.intro{
+    border-color:rgb(16, 99, 12);
+    border-style:solid;
     background-color: rgb(174, 238, 174);
     color:rgb(83, 5, 5);
+}
+
+/*element that has both the class intro and the class preamble*/
+/*0 for bottom border in this one, 0 for top in the other, so that they don't separate the boxes. there may be a better solution that I don't know*/
+.intro.preamble {
+    border-width:4px 4px 0 4px;
+    font-size:110%;
+  }
+
+.intro.to-do_list{
+    border-width:0 4px 4px 4px;
 }
 
 /*example of selecting descendant of intro to-do_list, works with other classes or ids as well*/
@@ -39,17 +46,35 @@ body{
     font-weight:700;
 }
 
+/*padding is between border of box and contents. margin is between box and other boxes/border of screen. border adds space between margin and padding.
+outline is on the outside of the box instead of inside, so it may overlap with other objects and isn't part of the dimensions of the box.
+if there are two margins in the same area, whichever one is largest is the one used, it doesn't add.
+box-sizing:border-box forces the height and width to count the padding and margin rather than just content, content box decreases in size but padding and margin stay the same
+default behavior for box-sizing is content-box*/ 
 .info{
+    color:rgb(54, 11, 11);
+    background-color:rgb(231, 119, 119);
+    outline:rgb(126, 25, 25) solid 4px;
+    border:rgb(201, 65, 65) solid 2px;
+    width:40%;
+    box-sizing:border-box;
+    height:10%;
     padding:1%;
     margin-right:50%;
     margin-bottom:1%;
     margin-top:5%;
 }
 
+/*border image is needed because there's no other way to make it have a gradient color. border-image-slice is needed to specify that its only one image*/
 .welcome{
+    background-image:url(images/welcomebackground.png);
+    background-size:40%;
+    border-image:linear-gradient(to bottom, rgb(94, 250, 94), rgb(24, 63, 24));
+    border-image-slice:1;
+    border-width:5px;
+    border-style:solid;
     color:black;
     font-size:180%;
-    background-color:rgb(56, 211, 42);
 }
 
 .face{
