@@ -21,7 +21,7 @@ body{
     font-size:120%;
   }
 
-/*element that is a child of the class intro and has the class emphasis*/
+/*element that is a descendant of the class intro and has the class emphasis*/
 .intro .emphasis {
     color:blue;
 }
@@ -31,7 +31,7 @@ body{
     color:rgb(83, 5, 5);
 }
 
-/*example of selecting children of intro to-do_list, works with other classes or ids as well*/
+/*example of selecting descendant of intro to-do_list, works with other classes or ids as well*/
 .intro.to-do_list ol li{
     color:rgb(211, 24, 56);
     font-weight:700;
