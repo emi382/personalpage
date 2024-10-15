@@ -1,0 +1,16 @@
+3 display types learn so far: block, inline, inline-block.
+
+Block follows the usual box system, adds a new box underneath the current one.
+Inline is just in the current box, can't really set width or height and any margin/padding/border will likely overlap with the rest of the box. It's displayed next to the content of
+the box it's in, as long as there's space.
+inline-block is a way to have it be in the current box but while also being able to use width, height, and generally make it act more like a box
+
+Examples of elements with default behavior of block: h1, div, p, ol, ul, li
+Examples of elements with default behavior of inline: a, span, b, i, img, button
+
+FLEXBOX:
+
+Flexbox has a container and elements inside it. The container acts like a box and can have margin, padding, border, etc. 
+The elements inside it are arranged as columns that take up equal space by default. Each element can be given margin, padding, border, etc.
+IMPORTANT: an element of a flexbox container can itself be also a container, and it can also have more than one block.
+Flexbox is a very powerful tool for arranging elements and preferrable to inline-block usually.
