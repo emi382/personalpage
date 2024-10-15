@@ -11,6 +11,7 @@ Examples of elements with default behavior of inline: a, span, b, i, img, button
 FLEXBOX:
 
 Flexbox has a container and elements inside it. The container acts like a box and can have margin, padding, border, etc. 
-The elements inside it are arranged as columns that take up equal space by default. Each element can be given margin, padding, border, etc.
+The elements inside it are arranged can be arranged either vertically (column) or horizontally (row) and take up equal space by default. 
+Each element can be given margin, padding, border, etc.
 IMPORTANT: an element of a flexbox container can itself be also a container, and it can also have more than one block.
 Flexbox is a very powerful tool for arranging elements and preferrable to inline-block usually.
