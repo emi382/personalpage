@@ -57,15 +57,47 @@ if there are two margins in the same area, whichever one is largest is the one u
 box-sizing:border-box forces the height and width to count the padding and margin rather than just content, content box decreases in size but padding and margin stay the same
 default behavior for box-sizing is content-box*/ 
 .info{
+    display:flex;
     color:rgb(54, 11, 11);
-    background-color:rgb(231, 119, 119);
-    outline:rgb(126, 25, 25) solid 4px;
-    border:rgb(201, 65, 65) solid 2px;
-    width:40%;
+    background-color:transparent;
+    width:50%;
     box-sizing:border-box;
-    height:10%;
-    padding:1%;
+    height:15%;
+    padding:0.5%;
     margin:2% 50% 1% 0%;
+}
+
+.flexbox1,
+.flexbox2{
+    flex:1;
+}
+
+.flexbox1{
+    background-color:rgb(231, 119, 119);
+    border:rgb(126, 25, 25) solid 4px;
+    padding:2%;
+    margin:1%;
+}
+
+.flexbox2{
+    display:flex;
+}
+
+.flexbox2 p{
+    flex:0.5;
+    background-color:rgb(231, 119, 119);
+    border:rgb(126, 25, 25) solid 4px;
+    padding:2%;
+    margin:10% 1% 1% 1%;
+    height:40%;
+}
+
+.flexbox2 .hobbies{
+    flex: 1 1 auto;
+    background-color:rgb(231, 119, 119);
+    border:rgb(126, 25, 25) solid 4px;
+    padding:3%;
+    margin:1%;
 }
 
 /*border image is needed because there's no other way to make it have a gradient color. border-image-slice is needed to specify that its only one image*/

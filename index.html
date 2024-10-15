@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!--linking the css style sheet-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!--linking the css style sheet-->
     <title>Welcome to my page!</title>
   </head>
 
@@ -13,8 +13,20 @@
     <div class="intro preamble">
       <h1>Introduction:</h1>
       <!--noopener prevents the linked page from changing this one, noreferrer is to prevent the linked page from knowing where the link was. noreferrer includes noopener-->
-      <p>This is a <em class="emphasis">work in progress</em> for the <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">Odin Project</a> curriculum</p>
-      <p>When it's done, it <strong>should</strong> be a personal page to introduce myself and include some interactive elements</p>
+      <p>
+        This is a <em class="emphasis">work in progress</em> for the
+        <a
+          href="https://www.theodinproject.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Odin Project</a
+        >
+        curriculum
+      </p>
+      <p>
+        When it's done, it <strong>should</strong> be a personal page to
+        introduce myself and include some interactive elements
+      </p>
     </div>
     <!--divs can have an id as well, an id is unique unlike a class. however, class is preferred usually. ids need a different css selector-->
     <div class="intro to-do_list">
@@ -33,18 +45,33 @@
       </ol>
     </div>
     <div class="info">
-      <h1>About me:</h1>
-      <p>Computer Science student at [university name]. Born in [year]. A student trying to expand their capabilities by learning web development. </p>
-      <h2>Hobbies:</h2>
-      <ul>
-        <li>Hobby1</li>
-        <li>Hobby2</li>
-        <li>Hobby3</li>
-        <li>Hobby4</li>
-      </ul>
-      <p>For any inquiries, message me at mailaddress@gmail.com</p>
+      <div class="flexbox1">
+        <h1>About me:</h1>
+        <p>
+          Computer Science student at [university name]. Born in [year]. A
+          student trying to expand their capabilities by learning web
+          development.
+        </p>
+      </div>
+      <div class="flexbox2">
+        <div class="hobbies">
+          <h2>Hobbies:</h2>
+          <ul>
+            <li>Hobby1</li>
+            <li>Hobby2</li>
+            <li>Hobby3</li>
+            <li>Hobby4</li>
+          </ul>
+        </div>
+        <p>For any inquiries, message me at mailaddress@gmail.com</p>
+      </div>
     </div>
-    <img src="./images/testimage.jpg" alt="just including an image for future reference" height="200" width="200" class="face">
+    <img
+      src="./images/testimage.jpg"
+      alt="just including an image for future reference"
+      height="200"
+      width="200"
+      class="face"
+    />
   </body>
-
 </html>
