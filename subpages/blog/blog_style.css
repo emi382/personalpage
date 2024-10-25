@@ -7,13 +7,12 @@ html, body{
 .flex_container {
     display:flex;
     height:100%;
-    margin:0;
 }
 
 .sidebar {
     background-color:darkslateblue;
     border:black solid 2px;
-    flex:0.08;
+    flex:0.05 1 5%;
     padding:0.8%;
 }
 
@@ -21,6 +20,6 @@ html, body{
     background-color:rgb(141, 129, 219);
     border:black solid 2px;
     flex:1;
-    width:90%;
+    width:1 1 95%;
     text-align:center;
 }
