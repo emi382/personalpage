@@ -11,17 +11,28 @@ html, body{
 
 /*grow and shrink specify at which rate items grow or shrink. 0 means no growing/shrinking happens, 1 means it grows/shrinks at a rate of 1 compared to other items*/
 .sidebar {
+    display:flex;
+    flex-direction:column;
     background-color:darkslateblue;
-    border:black solid 2px;
+    border:black solid 5px;
     /*flex 0 0 means it won't grow or shrink by default from its 120px value. it will still shrink a bit when making the window smaller but that's not a bug*/
     flex:0 0 120px;
-    padding:0.8%;
+}
+
+.sidebar button {
+    min-height:30px;
+    width:100%;
+    height:10%;
+    flex:0 1 auto;
+    border:black solid;
+    border-width:0 0 5px 0;
+    color:aquamarine;
+    background-color:darkblue;
 }
 
 /* if flex basis is auto, it looks for a width declaration. if flex basis is 0, everything shrinks evenly because there's no basis to respect*/
 .content {
     background-color:rgb(141, 129, 219);
-    border:black solid 2px;
     flex:1 1 90%;
     text-align:center;
 }
