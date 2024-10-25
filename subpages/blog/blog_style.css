@@ -9,17 +9,19 @@ html, body{
     height:100%;
 }
 
+/*grow and shrink specify at which rate items grow or shrink. 0 means no growing/shrinking happens, 1 means it grows/shrinks at a rate of 1 compared to other items*/
 .sidebar {
     background-color:darkslateblue;
     border:black solid 2px;
-    flex:0.05 1 5%;
+    /*flex 0 0 means it won't grow or shrink by default from its 120px value. it will still shrink a bit when making the window smaller but that's not a bug*/
+    flex:0 0 120px;
     padding:0.8%;
 }
 
+/* if flex basis is auto, it looks for a width declaration. if flex basis is 0, everything shrinks evenly because there's no basis to respect*/
 .content {
     background-color:rgb(141, 129, 219);
     border:black solid 2px;
-    flex:1;
-    width:1 1 95%;
+    flex:1 1 90%;
     text-align:center;
 }
