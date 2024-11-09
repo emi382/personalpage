@@ -15,3 +15,27 @@ The elements inside it are arranged can be arranged either vertically (column) o
 Each element can be given margin, padding, border, etc.
 IMPORTANT: an element of a flexbox container can itself be also a container, and it can also have more than one block.
 Flexbox is a very powerful tool for arranging elements and preferrable to inline-block usually.
+
+flex:1; means flex:1 1 0, numbers other than 1 put the number in the first parameter (flex-grow)
+flex:auto; means flex:1 1 auto
+flex:initial; means flex:0 1 auto, it means it can shrink when there's less space, but otherwise respects the width/height set by the other properties
+flex:none; means flex: 0 0 auto, it means items won't shrink or grow at all
+
+use min-width to avoid elements breaking when they shrink
+
+flex-basis auto means that it will use the width declaration as basis. flex-basis 0 means it will shrink as much as indicated by the flex-shrink value, evenly.
+the default flex values are flex:1 0 auto
+
+flex-direction: row is the default, column makes the boxes vertically distributed. If vertical, it's important to remember that elements default to the height of their content
+unless a height is specified. so flex-basis:0 would make it have height 0 if there is no content
+
+justify-content is added to a flex container to specify how the flex boxes are distributed. The default behavior is for them to be next to each other in the top left corner.
+examples: space-between makes it so that if there is space unused space, it is distributed evenly between the boxes.
+
+JUSTIFY-CONTENT ALIGNS ON MAIN AXIS, FOR CROSS AXIS USE ALIGN-ITEMS. Main axis is the one across which the items are laid, for example if flex:column, the vertical axis.
+Cross axis is the axis 90 degrees from it
+
+Gap: adding a gap to a flex container specifies how much space there will be between the items inside it
+
+Wrap: default behavior is nowrap, but flex-wrap:auto makes it so items don't shrink below their size set by width, and instead start up a new row (or column if that's what 
+flex-direction is set to). Each new row is its own flex space where the same rules apply.
