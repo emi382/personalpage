@@ -7,6 +7,7 @@ html, body{
 .flex_container {
     display:flex;
     height:100%;
+    width:100%;
 }
 
 /*grow and shrink specify at which rate items grow or shrink. 0 means no growing/shrinking happens, 1 means it grows/shrinks at a rate of 1 compared to other items*/
@@ -32,7 +33,22 @@ html, body{
 
 /* if flex basis is auto, it looks for a width declaration. if flex basis is 0, everything shrinks evenly because there's no basis to respect*/
 .content {
+    gap:2%;
+    display:flex;
+    flex-direction:column;
     background-color:rgb(141, 129, 219);
-    flex:1 1 90%;
-    text-align:center;
+    flex:1 1 auto;
+    align-items:center;
+}
+
+.welcome {
+    width:50%;
+    height:6%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:rgb(244, 119, 255) solid 2px;
+    flex:0 0 auto;
+    background-color:rgb(179, 171, 226);
+    font-size: 120%;
 }
