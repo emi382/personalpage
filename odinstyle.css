@@ -1,0 +1,58 @@
+html, body{
+  margin:0;
+}
+
+.intro {
+  padding: 2% 10% 1% 10%;
+  background-color: rgb(37, 76, 150);
+}
+
+.intro .links {
+  padding:0 0 4% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.links h1 {
+  color: white;
+  flex:1 1 0;
+}
+
+.intro .buttons {
+  display: flex;
+  justify-content:right;
+  gap: 2%;
+  flex:1 1 0;
+}
+
+.buttons a {
+  padding:1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  background-color:black;
+  border-radius:10%;
+  border:solid 2px gray;
+  width:fit-content;
+  /*text-decoration none removes the underline and color from the links*/
+  text-decoration: none;
+  font-size: 140%;
+  text-align:center;
+  flex:0 1 auto;
+}
+
+.descrip {
+  display: flex;
+  justify-content:space-between;
+}
+
+.contactme {
+  display: flex;
+  flex-direction: column;
+}
