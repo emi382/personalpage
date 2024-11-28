@@ -109,25 +109,28 @@ h1 {
   flex-direction: column;
   gap: 4vh;
   align-items: center;
+  width:100%
 }
 
 .infoimages .images {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 0 20%;
+  justify-content:center;
+  gap:10%;
 }
 
 .infoimages .images .imagebox {
   display: flex;
   flex-direction: column;
-  justify-content: left;
   align-items: center;
-  width: 20%;
 }
 
 .infoimages .images .imagebox p {
   text-align: center;
+  font-size:90%;
+  color:rgb(85, 134, 118);
+  width: calc(100px + 4vw);
+  flex:1 1 0;
 }
 
 .infoimages .images .imagebox img {
