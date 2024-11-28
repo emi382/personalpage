@@ -3,6 +3,11 @@ html, body{
   font-family:"Roboto", sans-serif;
 }
 
+body {
+  display:flex;
+  flex-direction:column;
+}
+
 h1 {
   padding: 0;
   margin: 0;
@@ -54,9 +59,15 @@ h1 {
   color:rgb(111, 184, 243);
   display: flex;
   justify-content:space-between;
-  /*need to specify a height for image to work properly. otherwise it will just make the container as big as the image*/
-  height:200px;
+  /*if height isn't fit-content, it will look weird in lower resolutions*/
+  height:fit-content;
   width:100%;
+}
+
+.descrip img{
+  /*use vw values as size so that the image will resize itself if there's less space available*/
+  width:20vw;
+  height:20vw;
 }
 
 .contactme {
