@@ -1,11 +1,12 @@
-html, body{
-  margin:0;
-  font-family:"Roboto", sans-serif;
+html,
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -13,114 +14,113 @@ h1 {
   margin: 0;
 }
 
-
 .intro {
   padding: 1% 30% 1% 15%;
   background-color: rgb(37, 76, 150);
 }
 
 .intro .links {
-  padding:0 0 4% 0;
+  padding: 0 0 4% 0;
   display: flex;
   justify-content: space-between;
-  font-size:80%;
+  font-size: 80%;
 }
 
 .intro .buttons {
   display: flex;
-  justify-content:right;
+  justify-content: right;
   gap: 2%;
-  flex:1 1 0;
+  flex: 1 1 0;
 }
 
 .buttons a {
-  padding:1%;
+  padding: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: gray;
-  background-color:black;
-  border-radius:10px;
-  border:solid 2px gray;
-  width:fit-content;
+  background-color: black;
+  border-radius: 10px;
+  border: solid 2px gray;
+  width: fit-content;
   /*text-decoration none removes the underline and color from the links*/
   text-decoration: none;
   font-size: 140%;
-  text-align:center;
-  flex:0 1 auto;
+  text-align: center;
+  flex: 0 1 auto;
 }
 
 .links h1 {
   color: white;
-  flex:1 1 0;
+  flex: 1 1 0;
 }
 
 .descrip {
-  color:rgb(111, 184, 243);
+  color: rgb(111, 184, 243);
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   /*if height isn't fit-content, it will look weird in lower resolutions*/
-  height:fit-content;
-  width:100%;
+  height: fit-content;
+  width: 100%;
 }
 
-.descrip img{
+.descrip img {
   /*use vw values as size so that the image will resize itself if there's less space available*/
-  width:20vw;
-  height:20vw;
+  width: 20vw;
+  height: 20vw;
 }
 
 .contactme {
-  font-size:110%;
+  font-size: 110%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .contactme p {
-  font-size:120%;
+  font-size: 120%;
 }
 
 .contactme h1 {
-  width:70%;
+  width: 70%;
 }
 
 .contactme a {
-  box-sizing:border-box;
-  height:auto;
-  color:white;
-  background-color:rgb(0, 221, 236);
-  width:fit-content;
+  box-sizing: border-box;
+  height: auto;
+  color: white;
+  background-color: rgb(0, 221, 236);
+  width: fit-content;
   padding: 2% 5%;
-  text-decoration:none;
+  text-decoration: none;
   /*border-radius with percentages draws an ellipse using the percentages of the box. use non-relative units when possible
   if percentage is needed (its not here, but its a demonstration), unless the box is a square 2 values are needed (width/height) to fine tune it*/
-  border-radius:15%/40%;
-  border-width:4px;
+  border-radius: 15%/40%;
+  border-width: 4px;
 }
 
 .infoimages {
-  display:flex;
-  flex-direction:column;
-  gap:10%;
-  align-items:center;
-  height:400px;
-  width:100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  align-items: center;
+  height: 400px;
+  width: 100%;
 }
 
 .infoimages .images {
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  padding:0 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20%;
 }
 
-.infoimages .images .imagebox{
-  display:flex;
-  flex-direction:column;
-  justify-content:left;
-  align-items:center;
-  width:20%;
+.infoimages .images .imagebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: 20%;
 }
 
 .infoimages .images .imagebox p {
@@ -128,8 +128,8 @@ h1 {
 }
 
 .infoimages .images .imagebox img {
-  height:200px;
-  width:200px;
-  border-radius:10px;
-  border:solid 4px black;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border: solid 4px black;
 }
