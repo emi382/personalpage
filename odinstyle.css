@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  /*12 acts as the minimum, the 0.7 is variable*/
   font-size:calc(12px + 0.7vh);
 }
 
@@ -30,7 +31,7 @@ h1 {
 .intro .buttons {
   display: flex;
   justify-content: right;
-  gap: 2%;
+  gap: 2%; 
   flex: 1 1 0;
 }
 
@@ -69,8 +70,8 @@ h1 {
 
 .descrip img {
   /*use vw values as size so that the image will resize itself if there's less space available*/
-  width: 15vw;
-  height: 15vw;
+  width: calc(100px + 9vw);
+  height: calc(100px + 9vw);
 }
 
 .contactme {
